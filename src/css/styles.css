@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(34, 193, 195);
+        background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', Tahoma, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    -webkit-border-radius: 4px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+form>input {
+    outline: 0;
+    height: 42px;
+    width: 244px;
+    line-height: 42px;
+    padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #212121;
+    border: 0;
+    float: left;
+    -webkit-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+form>input:focus {
+    outline: 0;
+    background-color: #fff;
+}
+
+form>button {
+    background-color: rgba(34, 193, 195, 1);
+    height: 42px;
+    width: 62px;
+    text-align: center;
+    line-height: 42px;
+    border: 0;
+    color: #fff;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+form>button:hover {
+    background-color: rgba(18, 168, 143, 0.8);
+
+}
+
+.load-more {
+    visibility: hidden;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(38, 50, 56, 0.8);
+    border: 0;
+    color: #fff;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.load-more.visible {
+    visibility: visible;
+}
+
+.load-more.visible:hover {
+    background-color: rgba(0, 150, 136, 0.8);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(89, 170, 104, 0.6);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-card:hover {
+    transform: scale(1.05);
+}
+
+.gallery__image {
+    max-width: 100%;
+    display: block;
+}
+
+.info {
+    padding: 0 20px;
+}
+
+.info-item {
+    font-size: 15px;
+    line-height: 0.7;
+}
